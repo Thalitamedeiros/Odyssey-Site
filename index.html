@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odyssey — Equipe de Nautidesign · UEMA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">
+      <img src="logo.png" alt="Logo Odyssey">
+      <div>
+        <span style="color: white;">ODYSSEY</span>
+        <small>Nautidesign · UEMA</small>
+      </div>
+    </div>
+    <ul>
+      <li><a href="#sobre">O que fazemos</a></li>
+      <li><a href="#modelo3d">Modelo 3D</a></li>
+      <li><a href="#competicoes">Competições</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#membros">Membros</a></li>
+      <li><a href="#eventos">Eventos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Primeira equipe de nautidesign do Maranhão</span>
+        <h1>ODYSSEY</h1>
+        <p class="lede">Somos a equipe de nautidesign da Universidade Estadual do Maranhão (UEMA). Projetamos, construímos e testamos rebocadores em escala reduzida para representar o Maranhão nas principais competições de engenharia naval do Brasil.</p>
+        <div class="hero-ctas">
+          <a href="#competicoes" class="btn btn-primary">Ver nossos resultados</a>
+          <a href="#contato" class="btn btn-ghost">Junte-se à tripulação</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <img src="foto_inicio.png" alt="Ilustração do rebocador Odyssey">
+        <div class="tag">RIF-01 · Rebocador em escala reduzida</div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div><div class="num">1ª</div><div class="lbl">Equipe do Maranhão em nautidesign</div></div>
+      <div><div class="num">2025</div><div class="lbl">Estreia no DUNA, Joinville–SC</div></div>
+      <div><div class="num">1º</div><div class="lbl">Lugar em bateria da prova de Corrida</div></div>
+      <div><div class="num">20º</div><div class="lbl">Colocação geral na estreia nacional</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-wave"></div>
+
+<!-- O QUE FAZEMOS -->
+<section class="process" id="sobre">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">O que fazemos</span>
+      <h2>Nautidesign, do casco ao acabamento</h2>
+      <p>Nautidesign é a prática de projetar e construir, na prática, uma embarcação em escala reduzida — unindo arquitetura naval, engenharia mecânica e sistemas embarcados em um único casco funcional. É isso que fazemos, prova após prova, desde o traço no software até a largada na água.</p>
+    </div>
+    <div class="process-grid">
+      <div class="p-card">
+        <div class="idx">01</div>
+        <h3>Projeto naval</h3>
+        <p>Modelagem do casco, análises hidrostáticas e hidrodinâmicas e definição da geometria do rebocador com base em embarcações reais de porto.</p>
+      </div>
+      <div class="p-card">
+        <div class="idx">02</div>
+        <h3>Construção</h3>
+        <p>Corte do molde, laminação em fibra de vidro e resina, montagem do casco e acabamento — tudo feito à mão pela equipe, na bancada.</p>
+      </div>
+      <div class="p-card">
+        <div class="idx">03</div>
+        <h3>Sistemas embarcados</h3>
+        <p>Propulsão, motorização, cabeamento e eletrônica embarcada, calibrados para força de reboque, velocidade e manobrabilidade.</p>
+      </div>
+      <div class="p-card">
+        <div class="idx">04</div>
+        <h3>Testes e provas</h3>
+        <p>Testes de flutuabilidade, estanqueidade e desempenho em piscina antes de cada competição — ajustando o barco prova a prova.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MODELO 3D -->
+<section class="viewer3d" id="modelo3d">
+    <div class="wrap">
+
+        <div class="section-head">
+            <span class="kicker">Modelo 3D</span>
+            <h2>Visualizador 3D</h2>
+            <p>Arraste para girar e use o scroll para dar zoom.</p>
+        </div>
+
+        <div id="container3d">
+
+            <model-viewer
+                src="./modelo.glb"
+                alt="Modelo 3D Odyssey"
+                camera-controls
+                auto-rotate
+                auto-rotate-delay="0"
+                rotation-per-second="20deg"
+                shadow-intensity="1.3"
+                exposure="1.2"
+                environment-image="neutral"
+                touch-action="pan-y"
+                interaction-prompt="none">
+
+            </model-viewer>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- COMPETIÇÕES -->
+<section class="comp" id="competicoes">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Competições</span>
+      <h2>Onde colocamos o casco à prova</h2>
+    </div>
+
+    <div class="comp-layout">
+      <div class="comp-copy">
+        <p><strong>DUNA — Desafio Universitário de Nautidesign</strong> é a principal competição de rebocadores em escala reduzida do Brasil, criada em 2013 por estudantes de Engenharia Naval da UFSC Joinville. Reúne dezenas de equipes de todo o país, de universidades públicas e privadas, para uma disputa de projeto, construção e desempenho na água.</p>
+        <p>As embarcações são avaliadas em provas técnicas que testam força, velocidade, resistência e qualidade de projeto — e é nesse cenário nacional que a Odyssey representa a UEMA e o Maranhão pela primeira vez.</p>
+        <div class="porthole-row">
+          <div class="porthole"><b>BP</b>Bollard Pull</div>
+          <div class="porthole"><b>CR</b>Corrida</div>
+          <div class="porthole"><b>TT</b>Tomada de Tempo</div>
+          <div class="porthole"><b>PJ</b>Prova de Projeto</div>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <span class="badge">DUNA 2025 · Joinville, SC</span>
+        <h3>Estreia nacional da Odyssey</h3>
+        <div class="place">20–23 de agosto de 2025 · Equipe Lanterna Verde–Odyssey</div>
+        <div class="result-stats">
+          <div><div class="n">1º</div><div class="l">Lugar na bateria de Corrida</div></div>
+          <div><div class="n">20º</div><div class="l">Colocação geral</div></div>
+        </div>
+        <p style="color:var(--off); font-size:0.9rem; line-height:1.6;">Em sua primeira participação no maior desafio de nautidesign do país, a equipe — formada por estudantes de Engenharia Mecânica da UEMA — venceu uma bateria da prova de Corrida já na estreia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-wave"></div>
+
+<!-- PROJETOS -->
+<section class="projects" id="projetos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Projetos</span>
+      <h2>Nossos rebocadores</h2>
+      <p>Cada casco é um novo ciclo de projeto: aprendemos com a prova anterior e embarcamos essas melhorias no próximo protótipo.</p>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card">
+        <div class="proj-media">
+          <img src="barco01.jpeg" alt="" class="proj-img">
+          <span class="proj-status">Estreia 2025</span>
+        </div>
+        <div class="proj-body">
+          <h3>RIF-01</h3>
+          <p>Primeiro casco da equipe, levado ao DUNA 2025. Projetado para equilíbrio entre velocidade e estabilidade na prova de Corrida.</p>
+          <div class="proj-specs">
+            <span>Fibra de vidro</span>
+            <span>Propulsão elétrica</span>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-media">
+          <img src="barco02.jpeg" alt="" class="proj-img">
+          <span class="proj-status">Em construção</span>
+        </div>
+        <div class="proj-body">
+          <h3>RIF-02</h3>
+          <p>Nova geração do casco, com ajustes de projeto voltados para ganho de força de tração na prova de Bollard Pull.</p>
+          <div class="proj-specs">
+            <span>Reforço estrutural</span>
+            <span>Novo sistema embarcado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="membros">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Tripulação</span>
+      <h2>Quem constrói a Odyssey</h2>
+      <p>Estudantes de Engenharia Mecânica da UEMA, sob o comando da diretoria da equipe.</p>
+    </div>
+ 
+    <div class="team-photo">
+      <div class="team-photo-placeholder">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+      </div>
+      <img src="equipe.png" alt="Foto da equipe Odyssey" onerror="this.style.display='none'">
+      <div class="team-photo-caption">Equipe Odyssey · Universidade Estadual do Maranhão (UEMA)</div>
+    </div>
+ 
+    <div class="directorate-grid">
+      <div class="member captain">
+        <div class="m-avatar">WG</div>
+        <h4>Wanderson Gomes</h4>
+        <div class="role">Capitão da equipe</div>
+      </div>
+      <div class="member">
+        <div class="m-avatar">WG</div>
+        <h4>Wamderson Gomes</h4>
+        <div class="role">Plantas e Estrutura</div>
+      </div>
+      <div class="member">
+        <div class="m-avatar">KL</div>
+        <h4>Kaylane Alves</h4>
+        <div class="role">Marketing</div>
+      </div>
+      <div class="member">
+        <div class="m-avatar">JP</div>
+        <h4>João Pedro</h4>
+        <div class="role">Financeiro</div>
+      </div>
+      <div class="member">
+        <div class="m-avatar">KC</div>
+        <h4>Klayrton Carvalho</h4>
+        <div class="role">Elétrica</div>
+      </div>
+      <div class="member">
+        <div class="m-avatar">RB</div>
+        <h4>Robenilson</h4>
+        <div class="role">Propulsão</div>
+      </div>
+    </div>
+ 
+    <div class="advisor-strip">
+      <div class="m-avatar" style="background:linear-gradient(135deg, var(--steel), var(--steel-dark)); color:#fff;">JB</div>
+      <div>
+        <div class="role">Orientador</div>
+        <h4>Prof. José de Ribamar Barros Júnior</h4>
+        <p>Orienta a equipe Odyssey na Universidade Estadual do Maranhão (UEMA).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTOS -->
+<section class="events" id="eventos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Linha do tempo</span>
+      <h2>Eventos e próximos passos</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="date">2025</div>
+        <h3>Fundação da equipe na UEMA</h3>
+        <p>Estudantes de Engenharia Mecânica se reúnem para formar a primeira equipe de nautidesign do Maranhão, com apoio da Pró-Reitoria de Extensão e Assuntos Estudantis (Proexae/UEMA).</p>
+        <span class="status done">Concluído</span>
+      </div>
+      <div class="tl-item">
+        <div class="date">Ago 2025</div>
+        <h3>Estreia no DUNA, em Joinville (SC)</h3>
+        <p>Primeira participação nacional da equipe, com 1º lugar em uma bateria da prova de Corrida e 20ª colocação geral entre as equipes do país.</p>
+        <span class="status done">Concluído</span>
+      </div>
+      <div class="tl-item">
+        <div class="date">Próxima etapa</div>
+        <h3>DUNA 2026</h3>
+        <p>Novo ciclo de projeto e construção com foco em subir na classificação geral e evoluir nas provas de Bollard Pull e Prova de Projeto.</p>
+        <span class="status next">Em preparação</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band" id="contato">
+  <div class="wrap">
+    <h2>Quer navegar com a gente?</h2>
+    <p>Somos a primeira equipe de nautidesign do Maranhão — e estamos sempre em busca de novos integrantes, apoiadores e parceiros para o próximo casco.</p>
+    <a href="mailto:uema.equipeodyssey@gmail.com" class="btn btn-primary">Fale com a equipe</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="logo.png" alt="Logo Odyssey">
+          <span style="font-family:'Oswald'; font-weight:700; font-size:1.1rem; letter-spacing:0.05em;">ODYSSEY</span>
+        </div>
+        <p class="small">Equipe de nautidesign da Universidade Estadual do Maranhão (UEMA), primeira do estado a projetar e competir com rebocadores em escala reduzida em nível nacional.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">O que fazemos</a></li>
+          <li><a href="#competicoes">Competições</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#membros">Membros</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:uema.equipeodyssey@gmail.com">uema.equipeodyssey@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/equipeodyssey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 EQUIPE ODYSSEY — NAUTIDESIGN UEMA</span>
+      <span>PRIMEIRA EQUIPE DE NAUTIDESIGN DO MARANHÃO</span>
+    </div>
+  </div>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+</body>
+</html>
